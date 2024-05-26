@@ -10,6 +10,8 @@ def prepare_images(input_folder_path, converted_files_output_directory):
     # Get a list of all files in the directory
     all_files = os.listdir(input_folder_path)
 
+    #print(f"[VAR] all_files: {all_files}")
+
     # Iterate over each file in the directory
     for filename in tqdm(all_files, desc="Converting images"):
 
