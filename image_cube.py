@@ -1,6 +1,5 @@
 import os
 import vtk
-from vtk.util import numpy_support
 import numpy as np
 from PIL import Image
 import glob
