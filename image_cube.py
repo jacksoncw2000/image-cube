@@ -18,8 +18,9 @@ converted_images_directory = os.path.join(root_directory, 'converted_images')
 converted_files_output_directory = os.path.join(converted_images_directory, project_folder_name)
 
 ensure_directory_exists(converted_images_directory)
+ensure_directory_exists(converted_files_output_directory)
 
-prepare_images(source_images_directory, converted_files_output_directory)
+prepare_images(source_images_specific_project_directory, converted_files_output_directory)
 
 # get the image paths
 img_files = sorted(glob.glob(f'{converted_files_output_directory}/*.png'))
