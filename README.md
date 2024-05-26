@@ -14,7 +14,7 @@
     * On Windows: venv/Scripts/Activate.ps1
     * On Mac: source venv/bin/activate
 9. Install the required dependencies by running in Terminal: pip install -r requirements.txt
-### How to Run after initial setup
+### How to Run After Initial Setup
  1. Run the image_cube.py file. Make sure to have a project folder set in the .env file.
 ## To-Do
 1. See if you can add a background image to the black void.
