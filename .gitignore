@@ -1,8 +1,10 @@
 # converted_images Folder
 converted_images/
 
-# source_images Folder
-source_images/
+# Ignore everything in the source_images folder
+source_images/*
+# But do not ignore the .gitkeep file in source_images
+!source_images/.gitkeep
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudio,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm,visualstudio,macos,windows
