@@ -17,4 +17,7 @@
 ### How to Run After Initial Setup
  1. Run the image_cube.py file. Make sure to have a project folder set in the .env file.
 ## To-Do
+### Bugs
+1. convert-files and jcw-utilities are personal private GitHub repositories. You either need to incorporate these projects' code into the current project or make convert-files and jcw-utilities public Python packages.
+### Additional Features
 1. See if you can add a background image to the black void.
