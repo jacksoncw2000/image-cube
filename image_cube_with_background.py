@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import glob
 import numpy as np
 from PIL import Image
@@ -9,6 +10,8 @@ from vtkmodules.vtkFiltersSources import vtkPlaneSource
 from jcw_utilities.utils_general import ensure_directory_exists
 
 from prepare_images import prepare_images
+
+load_dotenv(override=True)
 
 Image.MAX_IMAGE_PIXELS = None
 

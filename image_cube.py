@@ -1,12 +1,15 @@
 import os
-import vtk
+from dotenv import load_dotenv
+import glob
 import numpy as np
 from PIL import Image
-import glob
+import vtk
 
 from jcw_utilities.utils_general import ensure_directory_exists
 
 from prepare_images import prepare_images
+
+load_dotenv(override=True)
 
 project_folder_name = os.getenv('PROJECT_FOLDER_NAME')
 
