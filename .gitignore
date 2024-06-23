@@ -6,6 +6,9 @@ source_images/*
 # But do not ignore the .gitkeep file in source_images
 !source_images/.gitkeep
 
+# .vscode Folder
+.vscode/
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudio,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm,visualstudio,macos,windows
 
