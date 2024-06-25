@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import vtk
 
-from jcw_utilities.utils_general import ensure_directory_exists
+from jcw_utilities.utils_general import ensure_directory_exists, select_folder
 
 from prepare_images import prepare_images
 
@@ -25,13 +25,18 @@ ensure_directory_exists(converted_files_output_directory)
 
 prepare_images(source_images_specific_project_directory, converted_files_output_directory)
 
+import random
+
+prepare_images(source_images_specific_project_directory, converted_files_output_directory)
+
 # get the image paths
 img_files = sorted(glob.glob(f'{converted_files_output_directory}/*.png'))
 
 print(f'\n[VAR] img_files:\n{img_files}')
 
 # load the images
-img_paths = img_files[:6]  # take the first 6 images
+random.shuffle(img_files)  # shuffle the list to get random order
+img_paths = img_files[:6]  # take the first 6 images from the shuffled list
 
 
 def load_texture(img_path):
